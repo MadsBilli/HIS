@@ -1,0 +1,14 @@
+C:\External\HIS\aspnet\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.dll
+C:\External\HIS\aspnet\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.pdb
+C:\External\HIS\aspnet\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.dll
+C:\External\HIS\aspnet\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.pdb
+C:\External\HIS\aspnet\GIT\SQL.DataAccess\obj\Debug\SQL.DataAccess.csprojResolveAssemblyReference.cache
+D:\Devlopment\ClientTools\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.dll
+D:\Devlopment\ClientTools\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.pdb
+D:\Devlopment\ClientTools\GIT\SQL.DataAccess\obj\Debug\SQL.DataAccess.csprojResolveAssemblyReference.cache
+D:\Devlopment\ClientTools\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.dll
+D:\Devlopment\ClientTools\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.pdb
+E:\Saipradeep\Personal\LEADSWIN\HIS\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.dll
+E:\Saipradeep\Personal\LEADSWIN\HIS\GIT\SQL.DataAccess\bin\Debug\DataAccess.SQL2008.pdb
+E:\Saipradeep\Personal\LEADSWIN\HIS\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.dll
+E:\Saipradeep\Personal\LEADSWIN\HIS\GIT\SQL.DataAccess\obj\Debug\DataAccess.SQL2008.pdb

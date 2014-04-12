@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B9A683E-2FE2-49D1-87EC-7938322320D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Implementation</RootNamespace>
+    <AssemblyName>HIS.Implementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer\CustomerAddEditImpl.cs" />
+    <Compile Include="EmployeeAdmin\EmployeeAdminAddEditImpl.cs" />
+    <Compile Include="EmployeeAdmin\LoginImpl.cs" />
+    <Compile Include="FabricCode\FabricCodeImpl.cs" />
+    <Compile Include="InitialSetup\InitialsetupImpl.cs" />
+    <Compile Include="Invoice\InvoiceImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseInvoice\PurchaseInvoiceImpl.cs" />
+    <Compile Include="PurchaseOrder\PurchaseOrderImpl.cs" />
+    <Compile Include="Quotation\QuotationImpl.cs" />
+    <Compile Include="Receipts\ReceiptsImpl.cs" />
+    <Compile Include="Setup\AccessRightImpl.cs" />
+    <Compile Include="Setup\BUNameSetupImpl.cs" />
+    <Compile Include="Setup\CurrencySetupImpl.cs" />
+    <Compile Include="Setup\ActiveFinMonthSetupImpl.cs" />
+    <Compile Include="Setup\LinkAccountSetupImpl.cs" />
+    <Compile Include="Setup\FinanceSettingSetupImpl.cs" />
+    <Compile Include="Setup\RptPrintingSetupImpl.cs" />
+    <Compile Include="Setup\CountrySetupImpl.cs" />
+    <Compile Include="Setup\SalesManCommSetupImpl.cs" />
+    <Compile Include="Setup\tblTermSetupImpl.cs" />
+    <Compile Include="Setup\UOMSetupImpl.cs" />
+    <Compile Include="Setup\InvoiceItemDescriptionImpl.cs" />
+    <Compile Include="Setup\SystemSetupImpl.cs" />
+    <Compile Include="Workorder\WorkorderImpls.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Common\HIS.Common.csproj">
+      <Project>{3c94e5e7-dcc9-4ea8-baf9-4fcd689228d6}</Project>
+      <Name>HIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.Data.Mapper\HIS.Data.Mapper.csproj">
+      <Project>{af1f76ae-e1fb-43f9-ad98-72dccfea70a2}</Project>
+      <Name>HIS.Data.Mapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.DataAccess\HIS.DataAccess.csproj">
+      <Project>{e9ad31bc-6eed-4aba-98eb-97fad1c124a1}</Project>
+      <Name>HIS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.UI.Mapper\HIS.UI.Mapper.csproj">
+      <Project>{ee328d9a-80c6-4b81-bbf3-c9873b533162}</Project>
+      <Name>HIS.UI.Mapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

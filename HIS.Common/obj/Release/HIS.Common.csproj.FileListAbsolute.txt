@@ -1,0 +1,5 @@
+C:\External\HIS\aspnet\GIT\HIS.Common\bin\Release\HIS.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.Common\bin\Release\HIS.Common.pdb
+C:\External\HIS\aspnet\GIT\HIS.Common\obj\Release\HIS.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.Common\obj\Release\HIS.Common.pdb
+C:\External\HIS\aspnet\GIT\HIS.Common\obj\Release\HIS.Common.csprojResolveAssemblyReference.cache

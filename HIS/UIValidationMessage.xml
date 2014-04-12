@@ -1,0 +1,6 @@
+﻿<Errors>
+  <Error>
+    <ErrorID>SQL_ERROR_0001</ErrorID>
+    <ErrorMessage>Customer Name '{0}' already Exist.</ErrorMessage>
+  </Error>
+</Errors>

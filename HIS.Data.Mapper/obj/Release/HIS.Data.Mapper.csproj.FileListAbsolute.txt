@@ -1,0 +1,13 @@
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\HIS.Data.Mapper.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\HIS.Data.Mapper.pdb
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\DataAccess.SQL2008.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\HIS.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\Microsoft.Practices.Unity.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\HIS.Common.pdb
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\bin\Release\DataAccess.SQL2008.pdb
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\obj\Release\HIS.Data.Mapper.csprojResolveAssemblyReference.cache
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\obj\Release\HIS.Data.Mapper.dll
+C:\External\HIS\aspnet\GIT\HIS.Data.Mapper\obj\Release\HIS.Data.Mapper.pdb

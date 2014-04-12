@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9AD31BC-6EED-4ABA-98EB-97FAD1C124A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.DataAccess</RootNamespace>
+    <AssemblyName>HIS.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer\CustomerAddEditDA.cs" />
+    <Compile Include="EmployeeAdmin\EmployeeAdminAddEditDA.cs" />
+    <Compile Include="EmployeeAdmin\LoginDA.cs" />
+    <Compile Include="FabricCode\FabricCodeDA.cs" />
+    <Compile Include="InitialSetup\InitialSetupDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetUp\AccessRightsDA.cs" />
+    <Compile Include="SetUp\BUNameSetupDA.cs" />
+<<<<<<< HEAD
+    <Compile Include="SetUp\CurrencySetupDA.cs" />
+=======
+    <Compile Include="SetUp\BankAccountSetupDA.cs" />
+    <Compile Include="SetUp\ActiveFinMonthSetupDA.cs" />
+>>>>>>> c0a10f32012d376f1af9539b3dee21f3aae5cb3f
+    <Compile Include="SetUp\RptPrintingSetupDA.cs" />
+    <Compile Include="SetUp\CountrySetupDA.cs" />
+    <Compile Include="SetUp\SalesManCommSetupDA.cs" />
+    <Compile Include="SetUp\InvoiceItemDescriptionDA.cs" />
+    <Compile Include="SetUp\SystemSetupDA.cs" />
+    <Compile Include="SetUp\UOMSetupDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Common\HIS.Common.csproj">
+      <Project>{3c94e5e7-dcc9-4ea8-baf9-4fcd689228d6}</Project>
+      <Name>HIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.Data.Mapper\HIS.Data.Mapper.csproj">
+      <Project>{af1f76ae-e1fb-43f9-ad98-72dccfea70a2}</Project>
+      <Name>HIS.Data.Mapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQL.DataAccess\SQL.DataAccess.csproj">
+      <Project>{f7591b3d-cdc2-4e35-a604-d35c8a43b23a}</Project>
+      <Name>SQL.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

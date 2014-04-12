@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76E3A4F8-DFBF-4F09-BAEC-AFCCC7C53E30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.UI.Assembler</RootNamespace>
+    <AssemblyName>HIS.UI.Assembler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembler\SystemSetupAssembler.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Customer\CustomerAddEditAssembler.cs" />
+    <Compile Include="EmployeeAdmin\EmployeeAdminAddEditAssembler.cs" />
+    <Compile Include="EmployeeAdmin\LoginAssembler.cs" />
+    <Compile Include="FabricCode\FabricCodeAssembler.cs" />
+    <Compile Include="InitialSetup\InitialsetupAssembler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\AccessRightAssembler.cs" />
+    <Compile Include="Setup\BUNameSetupAssembler.cs" />
+<<<<<<< HEAD
+    <Compile Include="Setup\CurrencySetupAssembler.cs" />
+=======
+    <Compile Include="Setup\BankAccountSetupAssembler.cs" />
+    <Compile Include="Setup\ActiveFinMonthSetupAssembler.cs" />
+>>>>>>> c0a10f32012d376f1af9539b3dee21f3aae5cb3f
+    <Compile Include="Setup\SystemSetupAssembler.cs" />
+    <Compile Include="Setup\RptPrintingSetupAssembler.cs" />
+    <Compile Include="Setup\CountrySetupAssembler.cs" />
+    <Compile Include="Setup\SalesManCommSetupAssembler.cs" />
+    <Compile Include="Setup\UOMSetupAssembler.cs" />
+    <Compile Include="Setup\InvoiceItemDescriptionSetupAssembler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Common\HIS.Common.csproj">
+      <Project>{3c94e5e7-dcc9-4ea8-baf9-4fcd689228d6}</Project>
+      <Name>HIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.Implementation\HIS.Implementation.csproj">
+      <Project>{6b9a683e-2fe2-49d1-87ec-7938322320d3}</Project>
+      <Name>HIS.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HIS.UI.Mapper\HIS.UI.Mapper.csproj">
+      <Project>{ee328d9a-80c6-4b81-bbf3-c9873b533162}</Project>
+      <Name>HIS.UI.Mapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.DataAccess.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.DataAccess.pdb
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\DataAccess.SQL2008.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.Data.Mapper.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.Common.pdb
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\HIS.Data.Mapper.pdb
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\bin\Release\DataAccess.SQL2008.pdb
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\obj\Release\HIS.DataAccess.csprojResolveAssemblyReference.cache
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\obj\Release\HIS.DataAccess.dll
+C:\External\HIS\aspnet\GIT\HIS.DataAccess\obj\Release\HIS.DataAccess.pdb

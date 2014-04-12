@@ -1,0 +1,30 @@
+﻿<Errors>
+  <Error>
+    <ErrorID>SQL_ERROR_0001</ErrorID>
+    <ErrorMessage>Customer Name '{0}' already Exist.</ErrorMessage>
+  </Error>
+<Error>
+    <ErrorID>SQL_ERROR_0002</ErrorID>
+    <ErrorMessage>Your account had been disable. See administrator to reset your account.</ErrorMessage>
+  </Error>
+<Error>
+    <ErrorID>SQL_ERROR_0003</ErrorID>
+    <ErrorMessage>Incorrect Password Please try again.</ErrorMessage>
+  </Error>
+<Error>
+    <ErrorID>SQL_ERROR_0004</ErrorID>
+    <ErrorMessage>Incorrect Login Name Please try again.</ErrorMessage>
+  </Error>
+  <Error>
+    <ErrorID>SQL_ERROR_0005</ErrorID>
+    <ErrorMessage>Employee ID already exist.</ErrorMessage>
+  </Error>
+  <Error>
+    <ErrorID>SQL_ERROR_0006</ErrorID>
+    <ErrorMessage>Employee Login Name already exist.</ErrorMessage>
+  </Error>
+  <Error>
+    <ErrorID>SQL_ERROR_0007</ErrorID>
+    <ErrorMessage>The Term description '{0}' has already been used! Please verify and try again.</ErrorMessage>
+  </Error>
+</Errors>

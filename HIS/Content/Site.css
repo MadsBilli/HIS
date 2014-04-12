@@ -1,0 +1,239 @@
+﻿body
+{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 14px verdana, Arial, Helvetica, sans-serif; 
+	color: #061C37;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline; 
+}
+div {
+    padding-left:6px;
+    padding-top:5px;
+}
+.mainmenu
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #345422;	
+	background-repeat: repeat-x;
+	cursor: hand;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 3px 0px 3px;
+}
+.mainmenuHighlight
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color:#33A6F2;
+	color:black; /* 	background-position: center;     background-image: url('../../Images/mainmenu_01_over.gif');     background-repeat:repeat;          background-color:#8EE339; */
+	cursor:zoom-out;
+	text-align: center;
+	padding: 0px 3px 0px 3px;
+}
+.mainmenuHover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color:#33A6F2;
+	color: black; /*background-color: #8EE339;  	background-position: center;     background-image: url('../../Images/mainmenu_01_over.gif');     background-repeat:repeat;     */
+	cursor: hand;
+	text-align: center;
+	padding: 0px 3px 0px 3px;
+} 
+.pageSubTitle
+{ 
+	padding-bottom: 20px;
+	margin-left: 15px;
+	color: #DFECC1;
+	font-size: 13px;
+	min-height: 25px;
+}
+.legend
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: Black;
+    padding-top: 5px;
+}
+.verticalSpace {
+    height:15px;
+}
+.horizontalSpace {
+    width:7px;
+}
+.info
+{
+	text-decoration: none;
+	font-size: 0.85em;
+	font-style: italic;
+	font-variant: normal;
+	clear: both;
+}
+.editableGridRow {
+    border:none;
+    background-color:transparent;
+}
+
+.gridheader
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url('../../images/button_1.png' );
+	background-repeat: repeat-x;
+	color: black;
+	background-position: center;
+	padding-left: 15px;
+	background-repeat: repeat;
+	height: 21px;
+	text-align: left;
+	clear: both;
+}
+.gridrow
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: black;
+	background-color: #F7F6F3;
+	height: 20px;
+}
+.gridrowAlt
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: black;
+	height: 20px;
+}
+
+.InsertUpdateDeleteGrid1header,.InsertUpdateDeleteGridheader
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url('../../images/button_1.png' );
+	background-repeat: repeat-x;
+	color: #DFECC1;
+	background-position: center;
+	padding-left: 15px;
+	background-repeat: repeat;
+	height: 21px;
+	text-align: center;
+	clear: both;
+}
+.InsertUpdateDeleteGrid1row,.InsertUpdateDeleteGridrow
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #336600;
+	background-color: #F7F6F3;
+	height: 20px;
+}
+.InsertUpdateDeleteGrid1rowAlt,.InsertUpdateDeleteGridrowAlt
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #336600;
+	height: 20px;
+}
+
+.InsertUpdateDeleteGrid1rowAlt td,.InsertUpdateDeleteGridrowAlt td
+{
+	padding:5px;
+    border: solid 1px gray;
+}
+
+.InsertUpdateDeleteGrid1row td,.InsertUpdateDeleteGridrow td {
+    padding:5px;
+    border: solid 1px gray;
+}
+
+.InsertUpdateDeleteGrid1header th,.InsertUpdateDeleteGridheader th {
+    border: solid 1px gray;
+}
+.gridrowPager
+{
+	font-family: arial, verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+    color: black;
+	font-weight: normal;
+	background-color: #78adef; 
+	font-weight: bold;
+	height: 20px;
+}
+.hide
+{
+	display: none;
+}
+.numerictd {
+    text-align:right;
+    width:90px;
+}
+.highlight {
+    background-color: #fbfee0;
+}
+.active
+{
+	background-color: #fbfaa1;
+}
+.center {
+    text-align:center;
+}
+
+.staticTextArea {
+    border-style:none;
+    resize: none;
+    font-weight:bold;
+    background-color:transparent;
+    color:black;
+}
+
+.reports {
+    border:solid 1px black;
+    width:80%;
+}
+
+.reports th{
+    border:solid 1px black;
+    text-align:center;
+}
+.reports tr{
+   height:20px;
+}
+.reports td{
+    border:solid 1px black;
+    text-align:center;
+}
+.gridrowEmpty
+{
+	height: 20px;
+}
+.tdAlign
+{
+	text-align: right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 0.85em;
+}

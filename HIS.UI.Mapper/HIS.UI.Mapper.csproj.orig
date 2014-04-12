@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE328D9A-80C6-4B81-BBF3-C9873B533162}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.UI.Mapper</RootNamespace>
+    <AssemblyName>HIS.UI.Mapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Customer\CustContactsUIMapper.cs" />
+    <Compile Include="Customer\CustVendorUIMapper.cs" />
+    <Compile Include="EmployeeAdmin\EmployeeAdminUIMapper.cs" />
+    <Compile Include="FabricCode\FabricCodeUIMapper.cs" />
+    <Compile Include="FabricCode\FabricTypeUIMapper.cs" />
+    <Compile Include="InitialSetup\InitialsetupUIMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\AccessRightsUIMapper.cs" />
+    <Compile Include="Setup\AccGLTypeSetupUIMapper.cs" />
+    <Compile Include="Setup\BUNameSetupUIMapper.cs" />
+    <Compile Include="Setup\CurrencySetupUIMapper.cs" />
+    <Compile Include="Setup\BankAccountSetupUIMapper.cs" />
+<<<<<<< HEAD
+    <Compile Include="Setup\CurrencyTBUIMapper.cs" />
+=======
+    <Compile Include="Setup\AccCodeUIMapper.cs" />
+>>>>>>> 3023eb6700bbfac4638e8aa9563ac44dea214668
+    <Compile Include="Setup\FinMonthSetupUIMapper.cs" />
+    <Compile Include="Setup\FinYearSetupUIMapper.cs" />
+    <Compile Include="Setup\RptPrintingSetupUIMapper.cs" />
+    <Compile Include="Setup\CountrySetupUIMapper.cs" />
+    <Compile Include="Setup\SalesManCommSetupUIMapper.cs" />
+    <Compile Include="Setup\UOMSetupUIMapper.cs" />
+    <Compile Include="Setup\InvoiceItemDescriptionUIMapper.cs" />
+    <Compile Include="Setup\SystemSetupUIMapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Common\HIS.Common.csproj">
+      <Project>{3c94e5e7-dcc9-4ea8-baf9-4fcd689228d6}</Project>
+      <Name>HIS.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

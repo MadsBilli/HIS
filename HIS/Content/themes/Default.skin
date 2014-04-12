@@ -1,0 +1,12 @@
+﻿<%--
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+ 
+<asp:GridView  runat="server" AutoGenerateColumns="False" Width="100%"
+    BorderStyle="Solid" BorderWidth="1" BorderColor="#336600" AllowPaging="true" AllowSorting="true" EmptyDataText="No records found.">
+    <HeaderStyle CssClass="gridheader"/>
+    <AlternatingRowStyle CssClass="gridrow" HorizontalAlign="Left" />
+    <RowStyle CssClass="gridrowAlt" HorizontalAlign="Left"/>
+    <PagerStyle CssClass ="gridrowPager" />
+    <EmptyDataRowStyle CssClass ="gridrowEmpty" />
+</asp:GridView>

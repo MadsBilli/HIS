@@ -1,0 +1,98 @@
+﻿body {
+    font-family: verdana,arial,sans-serif !important;
+	font-size:11px !important;
+	width:99%;
+	background:#fff;
+    line-height:16px; 
+}
+.divMain{
+    text-align:center !important;
+    vertical-align:top;
+    display:block;
+    width:100%;
+}
+.divTable{
+  display:table;         
+  width:auto;         
+  border:0px solid  #666666;         
+  border-spacing:0px;
+  clear:both;
+}
+.divRow{
+  display:table-row;
+  width:auto;
+  clear:both;
+}
+.divCell{
+  display:table-cell; 
+  text-align:left;
+  vertical-align:middle;
+  color: #7d7e7d;
+}
+
+
+.grid{
+  display:table;         
+  width:auto;         
+  border:0px solid  #666666;         
+  border-spacing:0px;
+  clear:both;
+}
+.gridrow{
+  display:table-row;
+  background-color:#ccc;  
+}
+.gridheader{
+  display:table-cell; 
+  width:150px;  
+  font-size:11px !important; 
+  font-weight:bold;     
+  border-left: 1px solid #fff;
+  text-align:left;
+  vertical-align:middle;
+  height:25px;
+  color: #7d7e7d;
+}
+.gridcell{
+  display:table-cell; 
+  font-size:11px !important;
+  width:150px;        
+  border-left: 1px solid #fff;
+  text-align:left;
+  vertical-align:middle;
+  height:25px;
+  color: #7d7e7d;
+}
+.gridcell-price{
+  display:table-cell; 
+  font-size:11px !important;
+  width:150px;        
+  border-left: 1px solid #fff;
+  text-align:right;
+  vertical-align:middle;
+  height:25px;
+  color: #7d7e7d;
+}
+
+.gridcell-middle{
+  display:table-cell; 
+  font-size:11px !important;
+  width:150px;        
+  border-left: 1px solid #fff;
+  text-align:center;
+  vertical-align:middle;
+  height:25px;
+  color: #7d7e7d;
+}
+
+.gridcell-total{
+  display:table-cell; 
+  font-size:11px !important;
+  font-weight:bold;
+  width:150px;        
+  border-left: 1px solid #fff;
+  text-align:right;
+  vertical-align:middle;
+  height:25px;
+  color: #7d7e7d;
+}

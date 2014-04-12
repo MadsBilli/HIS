@@ -1,0 +1,7 @@
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\bin\Release\HIS.UI.Mapper.dll
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\bin\Release\HIS.UI.Mapper.pdb
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\bin\Release\HIS.Common.dll
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\bin\Release\HIS.Common.pdb
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\obj\Release\HIS.UI.Mapper.csprojResolveAssemblyReference.cache
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\obj\Release\HIS.UI.Mapper.dll
+C:\External\HIS\aspnet\GIT\HIS.UI.Mapper\obj\Release\HIS.UI.Mapper.pdb

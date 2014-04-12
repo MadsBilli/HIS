@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF1F76AE-E1FB-43F9-AD98-72DCCFEA70A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS.Data.Mapper</RootNamespace>
+    <AssemblyName>HIS.Data.Mapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Customer\CustContactsMapper.cs" />
+    <Compile Include="Customer\CustVendorMapper.cs" />
+    <Compile Include="EmployeeAdmin\EmployeeAdminMapper.cs" />
+    <Compile Include="FabricCode\FabricCodeMapper.cs" />
+    <Compile Include="FabricCode\FabricTypeMapper.cs" />
+    <Compile Include="InitialSetup\InitialsetupMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetUp\AccessRightsMapper.cs" />
+    <Compile Include="SetUp\BUNameSetupMapper.cs" />
+    <Compile Include="SetUp\CurrencySetupMapper.cs" />
+    <Compile Include="SetUp\BankAccountSetupMapper.cs" />
+<<<<<<< HEAD
+    <Compile Include="SetUp\CurrencyTBMapper.cs" />
+=======
+    <Compile Include="SetUp\AccCodeMapper.cs" />
+    <Compile Include="SetUp\AccGLTypeSetupMapper.cs" />
+>>>>>>> 3023eb6700bbfac4638e8aa9563ac44dea214668
+    <Compile Include="SetUp\FinMonthSetupMapper.cs" />
+    <Compile Include="SetUp\FinYearSetupMapper.cs" />
+    <Compile Include="SetUp\RptPrintingSetupMapper.cs" />
+    <Compile Include="SetUp\CountrySetupMapper.cs" />
+    <Compile Include="SetUp\InvoiceItemDescriptionMapper.cs" />
+    <Compile Include="SetUp\SalesManCommSetupMapper.cs" />
+    <Compile Include="SetUp\SystemSetupMapper.cs" />
+    <Compile Include="SetUp\UOMSetupMapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIS.Common\HIS.Common.csproj">
+      <Project>{3c94e5e7-dcc9-4ea8-baf9-4fcd689228d6}</Project>
+      <Name>HIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQL.DataAccess\SQL.DataAccess.csproj">
+      <Project>{f7591b3d-cdc2-4e35-a604-d35c8a43b23a}</Project>
+      <Name>SQL.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

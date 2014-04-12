@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HIS.SiteMaster"
+    EnableTheming="true" %>
+
+<%@ Register Src="~/UserControl/MenuStrip.ascx" TagName="Menu" TagPrefix="ucMenu" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Harmony In-House System</title>
+    <meta charset="utf-8" />
+    <link rel="Stylesheet" href="Content/js-image-slider.css" />
+    <link rel="Stylesheet" href="Content/CalendarControl.css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <!-- SmartMenus core CSS (required) -->
+    <link href="App_Themes/Theme/menu/sm-core-css.css" rel="stylesheet" type="text/css" />
+    <!-- "sm-simple" menu theme (optional, you can use your own CSS, too) -->
+    <link href="App_Themes/Theme/menu/sm-simple.css" rel="stylesheet" type="text/css" />
+    <!-- #main-menu config - instance specific stuff not covered in the theme -->
+    <style type="text/css">
+        #main-menu
+        {
+            position: relative;
+            z-index: 9999;
+            width: auto;
+        }
+        #main-menu ul
+        {
+            width: 12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/CalendarControl.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/CommonScript.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/WebForms/js-image-slider.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/jquery-1.8.2.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/jquery-1.8.2.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/jquery-ui-1.8.24.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/Scripts/jquery-ui-1.8.24.min.js") %>'></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/App_Themes/Theme/menu/jquery.js") %>'></script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/App_Themes/Theme/menu/jquery.smartmenus.js") %>'></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#main-menu').smartmenus({
+                mainMenuSubOffsetX: -1,
+                subMenusSubOffsetX: 10,
+                subMenusSubOffsetY: 0
+            });
+        });
+    </script>
+    <div class="black_strip_login">
+    </div>
+    <div id="header" style="background: none;">
+        <div class="logo">
+        </div>
+        <div style="text-align: right; padding: 5px 5px 0px 0px;">
+            <asp:Button ID="btnHome" runat="server" Text="Home" CssClass="button_main" PostBackUrl="~/Pages/Home.aspx"
+                OnClick="btnHome_Click" Visible="false" />
+            &nbsp;
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="button_main" OnClick="btnLogout_Click" />
+        </div>
+        <!--navi start here -->
+        <div class="top_navi">
+            <div class="username">
+                <div id="menu-position">
+                    <%--<ucMenu:Menu ID="menu" runat="server" />--%>
+                    <%--<ul id="mikemenu">
+                        <li>
+                            <div id="m2">
+                                
+                            </div>
+                        </li>
+                    </ul>--%>
+                </div>
+            </div>
+        </div>
+        <!--navi end here -->
+    </div>
+    <div style="margin: -42px -13px 0px 0px;">
+        <ul id="main-menu" class="sm sm-simple" style="width: auto;">
+            <li><a href='<%= ResolveClientUrl("~/Pages/Home.aspx") %>'>Home</a></li>
+            <li><a href='<%= ResolveClientUrl("~/Pages/Vendor/VendorAddEdit.aspx") %>'>Vendor</a></li>
+            <li><a href='<%= ResolveClientUrl("~/Pages/Customer/CustomerAddEdit.aspx") %>'>Customer</a></li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>General</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/FabricCode/FabricCodeAddEdit.aspx") %>'>Fabric
+                        Code</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/Quotation/QuotationSearch.aspx") %>'>Quotation</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/WorkOrder/Search.aspx") %>'>Work Order</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>Finance</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Account</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/General.aspx") %>'>General</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/PurchaseOrder/SearchPO.aspx") %>'>Purchase
+                        Order</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>Purchases</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/PurchaseInvoice/PurchaseInvoice.aspx") %>'>
+                        Purchase Invoice</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/Payments/Payment.aspx") %>'>Payments</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>Sales</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/Invoice/Invoice.aspx") %>'>Invoice</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/Receipt/Search.aspx") %>'>Receipts</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>Management</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Aging</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Reports</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Sales Commission</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="has-submenu"><span class="sub-arrow">+</span>Administration</a>
+                <ul class="sm-nowrap">
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Employees Admin</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>System Setup</a></li>
+                    <li><a href='<%= ResolveClientUrl("~/Pages/ComingSoon.aspx") %>'>Backup DB</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="wrapper_bg">
+        <div id="wrapper_login" style="background: none;">
+            <%--<div id="login_contn">--%>
+            <div id="body" style="margin-left: 1%; margin-right: 1%">
+                <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+                <div>
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                </div>
+            </div>
+            <%--</div>--%>
+            <br />
+            <br />
+            <footer>
+            <h2>© 2013 Harmony Furnishing Pte Ltd</h2>
+        </footer>
+        </div>
+    </div>
+    <%--<div id="divCopyrights" class="log_bot">
+        <div class="logbottom_cont">
+            <p class="leftcolu1">
+                © 2013 Harmony Furnishing Pte Ltd
+            </p>
+        </div>
+    </div>--%>
+    </form>
+</body>
+</html>
